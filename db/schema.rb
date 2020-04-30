@@ -10,27 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_30_024917) do
-
-  create_table "bloggers", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2019_04_25_012903) do
 
   create_table "room_messages", force: :cascade do |t|
-    t.integer "room_id", null: false
-    t.integer "user_id", null: false
-    t.text "message"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.integer "room_id"
+    t.integer "user_id"
+    t.text "messages"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["room_id"], name: "index_room_messages_on_room_id"
     t.index ["user_id"], name: "index_room_messages_on_user_id"
   end
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["name"], name: "index_rooms_on_name", unique: true
   end
 
@@ -41,8 +36,8 @@ ActiveRecord::Schema.define(version: 2020_04_30_024917) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "username", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true

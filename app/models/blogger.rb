@@ -1,2 +1,0 @@
-class Blogger < ApplicationRecord
-end

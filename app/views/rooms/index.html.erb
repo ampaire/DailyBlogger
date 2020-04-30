@@ -1,38 +1,23 @@
 <div class="row">
-  <div class="col-12 col-md-3">
-    <div class="mb-3">
-      <%= link_to new_room_path, class: "btn btn-primary" do %>
-        Create a blog
-      <% end %>
-    </div>
-
-    <% if @rooms.present? %>
-      <nav class="nav flex-column">
-        <% @rooms.each do |room| %>
-          <%= link_to room.name, room_path(room), class: "nav-link room-nav-link" %>
-        <% end %>
-      </nav>
-    <% else %>
-      <div class="text-muted">
-        No rooms yet!
-      </div>
-    <% end %>
+  <div class="col-12 col-md-3 mt-3">
+    <%= render 'rooms' %>
   </div>
 
   <div class="col">
-    <div class="alert alert-primary">
-      <h4 class="alert-heading">
-        Welcome to Daily Blogger!
+    <div class="alert alert-danger mt-3">
+      <h4 class="alert-heading text-center">
+        Welcome to DailyBlogger ☕!
       </h4>
 
       <p>
-        We need to talk.
+        let's chat.
       </p>
 
       <hr />
 
       <p>
-        please create or join a chat group froom the sidebar.
+        You can create or join a Channel from the sidebar.
       </p>
     </div>
+  </div>
 </div>

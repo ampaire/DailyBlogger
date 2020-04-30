@@ -4,4 +4,9 @@ class User < ApplicationRecord
   validates :username, uniqueness: true, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  def gravatar_url
+    gravatar_id = Digest::MD5::hexdigest(email).downcase
+    url = " https://robohash.org/avatar/#{gravatar_id}.png"
+  end
 end

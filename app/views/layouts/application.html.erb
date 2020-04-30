@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DailyBlogger</title>
+    <title>🍵DailyBlogger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,10 +13,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <%= render partial: 'shared/navigation_bar' %>
-          <div class="my-3">
-            <%= yield %>
-          </div>
+          <%= render 'shared/navigation_bar' %>
+          <%= yield %>
         </div>
       </div>
     </div>

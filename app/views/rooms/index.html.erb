@@ -1,1 +1,38 @@
-<h1>Blogger</h1>
+<div class="row">
+  <div class="col-12 col-md-3">
+    <div class="mb-3">
+      <%= link_to new_room_path, class: "btn btn-primary" do %>
+        Create a blog
+      <% end %>
+    </div>
+
+    <% if @rooms.present? %>
+      <nav class="nav flex-column">
+        <% @rooms.each do |room| %>
+          <%= link_to room.name, room_path(room), class: "nav-link room-nav-link" %>
+        <% end %>
+      </nav>
+    <% else %>
+      <div class="text-muted">
+        No rooms yet!
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col">
+    <div class="alert alert-primary">
+      <h4 class="alert-heading">
+        Welcome to Daily Blogger!
+      </h4>
+
+      <p>
+        We need to talk.
+      </p>
+
+      <hr />
+
+      <p>
+        please create or join a chat group froom the sidebar.
+      </p>
+    </div>
+</div>

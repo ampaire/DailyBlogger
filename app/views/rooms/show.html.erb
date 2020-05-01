@@ -12,8 +12,9 @@
       <% @room_messages.each do |room_message| %>
         <div class="chat-message-container">
           <div class="row no-gutters">
-            <div class="col-auto text-center">
-              <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
+            <div class="col-auto text-white mr-4">
+              <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt=""><br>
+              <%= room_message.user.username %>
             </div>
 
             <div class="col">

@@ -4,7 +4,7 @@ $(function() {
         room_id = $element.data('room-id')
         messageTemplate = $('[data-role="message-template"]');
 
-    $element.animate({ scrollTop: $element.prop("scrollHeight")}, 1000)
+    $element.animate({ scrollTop: $element.prop("scrollHeight")}, 1000)        
 
     App.cable.subscriptions.create(
       {

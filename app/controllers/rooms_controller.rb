@@ -16,10 +16,10 @@ class RoomsController < ApplicationController
     @room = Room.new permitted_parameters
 
     if @room.save
-      flash[:success] = "Room #{@room.name} was successfully created!"
+      flash[:success] = "Room #{@room.name} was created successfully"
       redirect_to rooms_path
     else
-      render 'new'
+      render :new
     end
   end
 
@@ -29,16 +29,14 @@ class RoomsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
-    @room = Room.find(params[:id]) if params[:id]
     if @room.update_attributes(permitted_parameters)
-      flash[:success] = "Room #{@room.name} was successfully updated!"
+      flash[:success] = "Room #{@room.name} was updated successfully"
       redirect_to rooms_path
     else
-      render 'new'
+      render :new
     end
   end
 

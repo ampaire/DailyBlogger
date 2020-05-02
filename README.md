@@ -1,7 +1,7 @@
 
 # DailyBlogger
 
-![screenshot](shot1.png)
+![screenshot](Shot1.png)
 This is a chat app where users create channels and join any of the availsble channels after they have created accounts
 
 

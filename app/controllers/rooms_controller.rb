@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RoomsController < ApplicationController
   # Loads:
   # @rooms = all rooms
@@ -28,8 +30,7 @@ class RoomsController < ApplicationController
     @room_messages = @room.room_messages.includes(:user)
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @room.update_attributes(permitted_parameters)

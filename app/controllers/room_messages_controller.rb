@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RoomMessagesController < ApplicationController
   before_action :load_entities
 
@@ -6,7 +8,7 @@ class RoomMessagesController < ApplicationController
                                        room: @room,
                                        message: params.dig(:room_message, :message)
 
-   RoomChannel.broadcast_to @room, @room_message
+    RoomChannel.broadcast_to @room, @room_message
   end
 
   protected

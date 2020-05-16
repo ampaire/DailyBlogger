@@ -31,6 +31,10 @@ In future, I hope to implement the following features to this application
 ## TECHNOLOGIES
 - Git
 - Ruby on Rails
+- JavaScript
+- HTML
+- CSS
+- Bootstrap 4
 - PostgreSQL
 - Heroku
 

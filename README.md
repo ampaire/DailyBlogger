@@ -95,7 +95,7 @@ Next, run the following command to make the rails executable available:
 That's it! You can verify your installed Rails version by running the following command:
 
 ``$ rails -v``
-### Rails (version).
+##### Rails (version).
 
 You can then clone this project 
 ``$ git clone https://github.com/ampaire/DailyBlogger.git ``.

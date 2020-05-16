@@ -31,7 +31,7 @@ In future, I hope to implement the following features to this application
 ## TECHNOLOGIES
 - Git
 - Ruby on Rails
-- Postgres database
+- PostgreSQL
 - Heroku
 
 ## SETTING UP

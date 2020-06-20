@@ -1,5 +1,5 @@
 
-# DAILY BLOGGER
+<h1 align = "center"> DAILY BLOGGER </h1>
 
 ![screenshot](Shot1.png)
 

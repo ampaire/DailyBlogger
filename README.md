@@ -4,7 +4,7 @@
 ![screenshot](Shot1.png)
 
 
-This is a simple chat app where users create channels and join any of the available channels after they have creating a user account. It is built using Ruby on Rails.
+This is a simple chat application where users create channels and join any of the available channels after they have creating a user account. It is built using Ruby on Rails.
 
 
 ## FEATURES
